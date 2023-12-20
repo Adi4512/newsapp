@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+   font-family: "Poppins",sans-serif;
+}
+
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;    
+}
+
+p{
+    font-family: "Roboto",sans-serif;
+    color:var(--secondary-text-color);
+    line-height: 1.4rem;
+
+
+}
+a{
+    text-decoration:none;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.flex {
+
+    display:flex;
+    align-items:center;
+
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #f3faff;
+    box-shadow:0 0 4px;
+    position:fixed;
+    top:0;
+   z-index:99;
+    left:0;
+    right: 0;  
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding-block:8px;
+}
+.company-logo img{
+    width: 120px;
+}
+
+.nav-links ul{
+    gap: 16px;
+}
+
+.hover-link{
+    cursor: pointer;
+}
+
+.hover-link:hover{
+    color:var(--secondary-text-color);
+}
+
+.hover-link:active{
+    color:rgba(255, 0, 0, 0.766)
+}
+
+.search-bar{
+    gap: 8px;
+    height:32px;
+}
+
+.news-input{
+   height:100%;
+   width: 200px;
+   border-radius:5px;
+   padding-inline: 10px;
+   border: 2px solid #bbd7f0;
+   font-family:"Roboto",sans-serif;
+
+}
+
+.search-button{
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding:6px 24px;
+    cursor: pointer;
+    font-family: "Roboto",sans-serif;
+}
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.search-button:active{
+    color:rgba(255, 0, 0, 0.766)
+}
+
+main{
+    padding-block:50px;
+    margin-top: 80px;
+}
+
+
+.cards-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 20px;
+
+}
+.card{
+
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4PX #d4ecff;
+    border-radius:4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+
+    background-color: #f9fdff;
+    transform:translateY(-2px);
+    box-shadow:1px  1px 8px #d4ecff;
+}
+
+.card-header img{
+    width: 100%;
+    object-fit: cover;
+    height: 180px;
+}
+
+.card-content{
+    padding: 15px;
+}
+
+.news-src{
+    margin-block:12px;
+}
+
+.nav-item.active{
+    color: var(--accent-color);
+}
